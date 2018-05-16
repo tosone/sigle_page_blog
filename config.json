@@ -1,0 +1,26 @@
+{
+    "contactMe": [{
+        "img": "./public/img/github.ico",
+        "alt": "GitHub",
+        "href": "https://github.com/tosone"
+    }, {
+        "img": "./public/img/coding.ico",
+        "alt": "Coding",
+        "href": "https://coding.net/u/tosone"
+    }, {
+        "img": "./public/img/segmentfault.ico",
+        "alt": "SegmentFault",
+        "href": "http://segmentfault.com/u/tosone"
+    }, {
+        "img": "./public/img/sina.ico",
+        "alt": "Sina",
+        "href": "http://weibo.com/234861397"
+    }],
+    "extraLinks": [{
+        "href": "/about.html",
+        "text": "关于我"
+    }],
+    "BlogTitle": "Tosone's Blog",
+    "BlogName": "Tosone",
+    "BlogHeadFace": "./public/img/tosone.png"
+}
