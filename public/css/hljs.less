@@ -1,0 +1,32 @@
+.markdownContent {
+    pre > code { border: 0; padding: 0; line-height: 1.5; margin: 0; }
+    pre { font-size: 1em; width: auto; margin-top: 0; margin: 0 -@markdown_margin 1rem -@markdown_margin; padding: 1rem @markdown_margin; border: 0; border-radius: 0; background: #23241f; }
+    .hljs { display: block; overflow-x: auto; background: #23241f; text-size-adjust: none; }
+    .hljs, .hljs-tag, .css .hljs-rules, .css .hljs-value, .css .hljs-function .hljs-preprocessor, .hljs-pragma { color: #f8f8f2; }
+    .hljs-attribute-blue, .hljs-attribute-blue .hljs-value, .scss .hljs-value-blue, .scss .hljs-value-blue .hljs-value { color: #66d9ef; }
+    .hljs-strongemphasis, .hljs-strong, .hljs-emphasis { color: #a8a8a2; }
+    .hljs-bullet, .hljs-blockquote, .hljs-horizontal_rule, .hljs-number, .hljs-regexp, .alias .hljs-keyword, .hljs-literal, .hljs-hexcolor { color: #ae81ff; }
+    .hljs-tag .hljs-value, .hljs-code, .hljs-title, .css .hljs-class, .scss .hljs-class, .hljs-class .hljs-title:last-child { color: #a6e22e; }
+    .hljs-link_url { font-size: 80%; }
+    .hljs-strong, .hljs-strongemphasis { font-weight: bold; }
+    .hljs-emphasis, .hljs-strongemphasis, .hljs-class .hljs-title:last-child { font-style: italic; }
+    .hljs-keyword, .hljs-function, .hljs-change, .hljs-winutils, .hljs-flow, .nginx .hljs-title, .tex .hljs-special, .hljs-header, .hljs-attribute, .hljs-symbol, .hljs-symbol .hljs-string, .hljs-tag .hljs-title, .hljs-value, .alias .hljs-keyword:first-child, .css .hljs-tag, .css .unit, .css .hljs-important { color: #fff; }
+    .scss .hljs-tag, .css .hljs-tag, .hljs-tag .hljs-value { color: #f92672; }
+    .hljs-function .hljs-keyword, .hljs-class .hljs-keyword:first-child, .hljs-constant, .scss .hljs-attribute, .css .hljs-attribute { color: #66d9ef; }
+    .hljs-variable, .hljs-params, .hljs-class .hljs-title { color: #fd971f; }
+    .scss .hljs-variable { font-style: oblique; }
+    .hljs-string, .hljs-subst, .hljs-type, .ruby .hljs-class .hljs-parent, .hljs-built_in, .django .hljs-template_tag, .django .hljs-variable, .smalltalk .hljs-class, .django .hljs-filter .hljs-argument, .smalltalk .hljs-localvars, .smalltalk .hljs-array, .hljs-attr_selector, .hljs-pseudo, .hljs-addition, .hljs-stream, .hljs-envvar, .apache .hljs-tag, .apache .hljs-cbracket, .tex .hljs-command, .hljs-prompt, .hljs-link_label, .hljs-link_url { color: #e6db74; }
+    .hljs-comment, .hljs-javadoc, .hljs-annotation, .hljs-decorator, .hljs-template_comment, .hljs-pi, .hljs-doctype, .hljs-deletion, .hljs-shebang, .apache .hljs-sqbracket, .tex .hljs-formula { font-family: Consolas,'Microsoft YaHei','Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif; color: #75715e; }
+    .css .hljs-id, .scss .hljs-id, .scss .hljs-id .hljs-value, .scss .hljs-id .hljs-value .hljs-hexcolor { color: #a6e22e; }
+    .css .hljs-value { color: #ae81ff; }
+    .coffeescript .javascript, .javascript .xml, .tex .hljs-formula, .xml .javascript, .xml .vbscript, .xml .css, .xml .hljs-cdata, .xml .php, .php .xml { opacity: .5; }
+    .html .hljs-title { color: #f92672; }
+    .html .hljs-attribute { color: #a6e22e; }
+    .html .hljs-value { color: #e6db74; }
+}
+
+@media screen and (max-width:1000px) {
+    .markdownContent {
+        pre { margin: 0 -@lite_markdown_margin 1rem -@lite_markdown_margin; padding: 1rem @lite_markdown_margin; }
+    }
+}

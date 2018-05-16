@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 10
+before_install:
+  - openssl aes-256-cbc -K $encrypted_70229feed5c4_key -iv $encrypted_70229feed5c4_iv -in deploy-key.enc -out deploy-key -d
+script:
+  - chmod 600 deploy-key
+  - eval `ssh-agent -s`
+  - ssh-add deploy-key
+  - git config user.name "Tosone"
+  - git config user.email "i@tosiney.com"
+  - git remote add gh-pages git@github.com:tosone/single-blog.git
+  - git fetch gh-pages && git fetch gh-pages gh-pages:gh-pages
+  - git worktree add -B gh-pages gh-pages gh-pages
+  - ./deploy.sh

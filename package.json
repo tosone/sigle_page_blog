@@ -1,0 +1,36 @@
+{
+  "name": "single_page_blog",
+  "version": "1.0.1",
+  "description": "Write blog with makedown.",
+  "main": "server.js",
+  "dependencies": {
+    "glob": "^7.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jsonminify": "^1.1.0",
+    "gulp-less": "^3.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "worktree": "git remote add dist git@github.com:tosone/ExploitDatabase.git",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosone/staticBlog.git"
+  },
+  "keywords": [
+    "single",
+    "page",
+    "blog"
+  ],
+  "author": "tosone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tosone/staticBlog/issues"
+  },
+  "homepage": "https://github.com/tosone/staticBlog#readme"
+}
